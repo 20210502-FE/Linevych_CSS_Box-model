@@ -11,13 +11,9 @@ html, body {
 body {
     font-family: 'Lucida Grande', sans-serif;
     background-color: #3399CC;
+    position: relative;
     border: 15px solid #2B81AC;
     color: #fff;
-}
-
-ul {
-    list-style: none;
-    font-size: 0;
 }
 
 a {
@@ -43,86 +39,94 @@ a {
     margin-bottom: 35px;
 }
 
-.content-wrapper {
-    border: 2px solid #fff;
-    transition: all .3s;
+.content__list,
+.content__item {
+    border-color: #fff;
+    border-style: solid;
 }
 
-.content-wrapper:hover {
-    opacity: 0.4;
+.content__list {
+    list-style: none;
+    font-size: 0;
+    border-width: 2px 0 0 2px;
 }
 
-li {
+.content__item {
+    border-width: 0 2px 2px 0;
+    transition: all .5s;
+}
+
+.width-25 {
+    width: 25%;
+}
+
+.width-50 {
+    width: 50%;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.content__item {
     display: inline-block;
     height: 100px;
-    border: 2px solid #fff;
     font-size: 24px;
     font-weight: normal;
     line-height: 26px;
     text-align: center;
-    transition: all .3s;
+    padding-top: 20px;
 }
 
-.content-wrapper__item-city-1 {
+.content__item_city-1 {
     background-color: #3399CC;
-    width: 50%;
 }
 
-.content-wrapper__item-city-2 {
+.content__item_city-2 {
     background-color: #33CCCC;
-    width: 25%;
 }
 
-.content-wrapper__item-city-3 {
+.content__item_city-3 {
     background-color: #996699;
-    width: 25%;
 }
 
-.content-wrapper__item-city-4 {
+.content__item_city-4 {
     background-color: #C24747;
-    width: 25%;
 }
 
-.content-wrapper__item-city-5 {
+.content__item_city-5 {
     background-color: #E2674A;
-    width: 25%;
 }
 
-.content-wrapper__item-city-6 {
+.conten__item_city-6 {
     background-color: #FFCC66;
-    width: 25%;
 }
 
-.content-wrapper__item-city-7 {
+.content__item_city-7 {
     background-color: #99CC99;
-    width: 25%;
 }
 
-.content-wrapper__item-city-8 {
+.content__item_city-8 {
     background-color: #669999;
-    width: 25%;
 }
 
-.content-wrapper__item-city-9 {
+.content__item_city-9 {
     background-color: #CC6699;
-    width: 50%;
 }
 
-.content-wrapper__item-city-10 {
+.content__item_city-10 {
     background-color: #339966;
-    width: 25%;
 }
 
-.content-wrapper__item-city-11 {
+.content__item_city-11 {
     background-color: #666699;
-    width: 100%;
 }
 
-.content-wrapper__link {
-    margin-top: 20px;
+.content__list:hover .content__item:not(:hover) {
+    opacity: .3;
 }
 
-.content-wrapper__link-item {
+.content__item-icon {
     font-size: 18px;
     font-weight: normal;
     line-height: 20px;
